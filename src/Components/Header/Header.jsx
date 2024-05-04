@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Header.css';
+import logo from "../../assets/images/logo.png"
 
 function Header() {
     const navigate = useNavigate();
@@ -14,7 +15,7 @@ function Header() {
     return (
         <div className='header'>
             <div className='header-container'>
-                <h1>Logo</h1>
+                <img src= {logo} alt="Logo do site" className="logo-img" />
                 <form onSubmit={handleSearch}>
                     <input type="text" name="search" placeholder="Pesquisar..." />
                     <button type="submit">Buscar</button>
