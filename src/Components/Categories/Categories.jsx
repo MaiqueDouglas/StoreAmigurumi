@@ -1,6 +1,7 @@
 import React from 'react';
 import './Categories.css'; 
-import Photo from "../../assets/images/Categories.png"
+import Photo1 from '../../assets/images/categories1.png';
+
 
 function Categories() {
     return (
@@ -9,27 +10,27 @@ function Categories() {
             <div className="categories">
                 <ul>
                     <li>
-                        <img src={Photo} alt="Categoria 1" />
+                        <img src={Photo1} alt="Categoria 1" />
                         <span>Categoria 1</span>
                     </li>
                     <li>
-                        <img src={Photo}alt="Categoria 2" />
+                        <img src={Photo1}alt="Categoria 2" />
                         <span>Categoria 2</span>
                     </li>
                     <li>
-                        <img src={Photo} alt="Categoria 3" />
+                        <img src={Photo1} alt="Categoria 3" />
                         <span>Categoria 3</span>
                     </li>
                     <li>
-                        <img src={Photo} alt="Categoria 4" />
+                        <img src={Photo1} alt="Categoria 4" />
                         <span>Categoria 4</span>
                     </li>
                     <li>
-                        <img src={Photo} alt="Categoria 5" />
+                        <img src={Photo1} alt="Categoria 5" />
                         <span>Categoria 5</span>
                     </li>
                     <li>
-                        <img src={Photo} alt="Categoria 6" />
+                        <img src={Photo1} alt="Categoria 6" />
                         <span>Categoria 6</span>
                     </li>
                 </ul>

@@ -1,0 +1,77 @@
+.slider {
+    position: relative;
+    top: 200px;
+    width: 1500px;
+    height: 500px;
+    margin: 0 auto; 
+    border: 1px solid rgb(120, 140, 170);
+    overflow: hidden; 
+}
+
+.slides {
+    width: 4500px; 
+    height: 500px;
+    display: flex;
+    transition: transform 1s ease; 
+}
+
+/* Slide 1*/
+
+.slide-one {
+    width: 1500px;
+    height: 500px;
+    background: linear-gradient(to right, rgb(120, 140, 170), rgb(150, 170, 200), rgb(176, 196, 222), rgb(200, 210, 230), rgb(220, 230, 240), rgb(230, 235, 242), rgb(235, 238, 244));
+  
+}
+
+.slide-one h1{
+    font-size: 200px;
+    text-align: center;
+    color: rgb(120, 140, 170);
+}
+
+/* Slide 2*/
+
+.slide-two {
+    width: 1500px;
+    height: 500px;
+    background: linear-gradient(to right, rgb(120, 140, 170), rgb(150, 170, 200), rgb(176, 196, 222), rgb(200, 210, 230), rgb(220, 230, 240), rgb(230, 235, 242), rgb(235, 238, 244));
+    
+
+}
+
+.slide-two h1{
+    font-size: 200px;
+    text-align: center;
+    color: rgb(120, 140, 170);
+}
+
+/* Slide 3*/
+
+.slide-three {
+    width: 1500px;
+    height: 500px;
+    background: linear-gradient(to right, rgb(120, 140, 170), rgb(150, 170, 200), rgb(176, 196, 222), rgb(200, 210, 230), rgb(220, 230, 240), rgb(230, 235, 242), rgb(235, 238, 244));
+  
+}
+
+.slide-three h1{
+    font-size: 200px;
+    text-align: center;
+    color: rgb(120, 140, 170);
+}
+
+.manual-navigation {
+    position: relative;
+    width: 1500px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-navigation input:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+

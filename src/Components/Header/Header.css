@@ -21,9 +21,8 @@
     padding: 10px 20px;
     border: 1px solid rgb(120, 140, 170);
     background-color: rgb(176, 196, 222); 
+
 }
-
-
 
 .header-container {
     position: relative;
@@ -35,8 +34,6 @@
     
 }
 
-
-
 .router-links {
     position: absolute;
     display: flex;
@@ -44,6 +41,7 @@
     margin-left: 550px;
     font-family: 'Acme', sans-serif;
     gap: 50px;
+
 }
 
 .router-links a {
@@ -53,8 +51,9 @@
     
 }
 
-.router-links a:hover {
-    text-decoration: underline; 
+.router-links a:hover{
+    color: white;
+    
 }
 
 .logo-img {
@@ -64,10 +63,8 @@
     
     width: 270px; 
     height: 270px; 
-   
-    
+     
 }
-
 
 .img-user{
     position: absolute;
@@ -99,9 +96,6 @@
     padding-left: 10px;
     font-family: 'Acme', sans-serif; 
 }
-
-
-
 
 .header-container button {
     height: 40px;

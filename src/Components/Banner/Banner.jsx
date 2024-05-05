@@ -17,16 +17,16 @@ function Banner() {
   return (
     <div className='box-container'>
         <h1>
-            DESCONTOS DA SEMANA <br/>
-            EM AMIGURUMIS DE CROCHÊ
+            Desconto da semana <br/>
+            em amigurumis de crochê 
         </h1>
         <h2>
-            APROVEITE NOSSAS OFERTAS ESPECIAIS EM <br/> 
-            AMIGURUMIS DE CROCHÊ ESTA SEMANA!
+            Aproveite nosssas ofertas especiais em <br/> 
+            Amigurumis de crochê esta semana!
         </h2>
         <h3>
-            DESCUBRA OS ENCANTADORES PERSONAGENS<br/>
-            DISPONIVEIS.
+            Descubra os encantadores personagens <br/>
+            disponiveis.
         </h3>
         <button>
             DESCUBRA AQUI!

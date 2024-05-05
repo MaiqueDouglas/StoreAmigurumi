@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 .box-container {
     position: relative;
@@ -8,58 +8,60 @@
     margin: 0 auto; 
     border: 1px solid rgb(120, 140, 170);
     background: linear-gradient(to right, rgb(120, 140, 170), rgb(150, 170, 200), rgb(176, 196, 222), rgb(200, 210, 230), rgb(220, 230, 240), rgb(230, 235, 242), rgb(235, 238, 244));
-  }
 
-  
+  }
 
   .box-container h1{
     position: absolute;
-    top: 20px;
-    left: 100px;
-    font-size: 40px;
+    top: 50px;
+    left: 60px;
+    font-size: 35px;
     animation: blink 1s infinite;
-    color: rgb(65, 93, 140);
-    font-family: "Bebas Neue", sans-serif;
+    color:  rgb(65, 93, 140);
+    font-family: "Questrial", sans-serif;
+
   }
   
   .box-container h2{
     position: absolute;
-    top: 150px;
-    left: 100px;
-    font-size: 30px;
-    color: #E0E0E0;
-    font-family: "Bebas Neue", sans-serif;
+    top: 170px;
+    left: 60px;
+    font-size: 25px;
+    color: white;
+    font-family: "Questrial", sans-serif;
 
   }
 
   .box-container H3 {
     position: absolute;
-    top: 255px;
-    left: 100px;
-    font-size: 30px;
-    color: #E0E0E0;
-    font-family: "Bebas Neue", sans-serif;
+    top: 240px;
+    left: 60px;
+    font-size: 20px;
+    color: white;
+    font-family: "Questrial", sans-serif;
   }
+
+  
 
   .box-container button{
     position: absolute;
-    top: 370px;
-    left: 100px;
+    top: 340px;
+    left: 60px;
     height: 50px;
     width: 200px;
-    font-size: 30px;
+    font-size: 20px;
     color: #E0E0E0;
     animation: blink 1s infinite;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Questrial", sans-serif;
     background-color: rgb(65, 93, 140) ;
     border-radius: 20px;
+
   }
 
-  @keyframes blink {
-    0% { opacity: 1; } 
-    50% { opacity: 0.5; } 
-    100% { opacity: 1; } 
-  }
+  .box-container button:hover {
+    background-color: rgb(95, 123, 170);
+    
+}
 
   .box{
     position: relative;
