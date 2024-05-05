@@ -9,6 +9,7 @@ import Collection2 from "../../Components/Collection2/Collection2";
 import Collection3 from "../../Components/Collection3/Collection3"
 import Collection4 from "../../Components/Collection4/Collection4";
 import About from "../About/About";
+import Footer from "../../Components/Footer/Footer";
 
 function Home(){
     return(
@@ -22,6 +23,7 @@ function Home(){
         <Collection3/>
         <Collection4/>
         <About/>
+        <Footer/>
         
        </div>
 
