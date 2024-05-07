@@ -1,9 +1,13 @@
 import React from "react";
 import './About.css';
 import foto from "../../assets/images/about.png";
+import Header from "../../Components/Header/Header";
+
 
 function About(){
     return(
+        <div>
+        <Header/>
         <section className="about"  id="abaut">
              <div className="about-content">
                   <h2>Olá, me chamo Fulano de tal!</h2>
@@ -21,8 +25,9 @@ function About(){
              <div className="abaut-img">
                  <img src={foto} alt=""/>
              </div>
-             
         </section>
+         </div>
+        
 
     );
     

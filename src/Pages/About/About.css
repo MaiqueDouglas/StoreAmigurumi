@@ -40,7 +40,7 @@
     font-size: 45px;
     top: 40px;
     left: 250px;
-    color: rgb(220, 100, 140);
+    color: rgb(65, 93, 140);
     font-family: 'Acme', sans-serif;
 
 }
@@ -56,7 +56,7 @@
 .whatsApp {
     height: 50px;
     width: 450px;
-    background-color: rgb(220, 100, 140);
+    background-color: rgb(65, 93, 140);
     border-radius: 10px;
     color: white;
     font-size: 30px;
@@ -68,7 +68,7 @@
 .instagram {
     height: 50px;
     width: 450px;
-    background-color: rgb(220, 100, 140);
+    background-color: rgb(65, 93, 140);
     border-radius: 10px;
     color: white;
     font-size: 30px;
@@ -78,7 +78,7 @@
 }
 
 .whatsApp:hover, .instagram:hover {
-    background-color: rgb(200, 80, 120); 
+    background-color: rgb(85, 113, 160); 
 }
 
 
