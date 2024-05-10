@@ -6,6 +6,7 @@ import Photo3 from '../../assets/images/Categories3.png';
 import Photo4 from '../../assets/images/Categories4.png';
 import Photo5 from '../../assets/images/Categories5.png';
 import Photo6 from '../../assets/images/Categories6.png';
+import Photo7 from '../../assets/images/Categories7.png';
 
 
 
@@ -25,19 +26,23 @@ function Categories() {
                     </li>
                     <li>
                         <img src={Photo3} alt="Categoria 3" />
-                        <span>Categoria 3</span>
+                        <span>Móbiles</span>
                     </li>
                     <li>
                         <img src={Photo4} alt="Categoria 4" />
-                        <span>Categoria 4</span>
+                        <span>Bonecos</span>
                     </li>
                     <li>
                         <img src={Photo5} alt="Categoria 5" />
-                        <span>Categoria 5</span>
+                        <span>Moda Praia</span>
                     </li>
                     <li>
                         <img src={Photo6} alt="Categoria 6" />
-                        <span>Categoria 6</span>
+                        <span>Moda Bebê</span>
+                    </li>
+                    <li>
+                        <img src={Photo7} alt="Categoria 7" />
+                        <span>Nicho</span>
                     </li>
                 </ul>
             </div>
