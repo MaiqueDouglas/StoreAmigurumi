@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 .slider {
     position: relative;
     top: 200px;
@@ -25,52 +28,40 @@
 }
 
 .slide-one h1{
-    font-size: 200px;
-    text-align: center;
-    color: rgb(120, 140, 170);
+    margin-top: -450px;
+    margin-left: 100px;
+    font-size: 150px;
+    font-family: "Questrial", sans-serif;
+    color: rgb(65, 93, 140);
 }
 
-/* Slide 2*/
-
-.slide-two {
-    width: 1500px;
-    height: 500px;
-    background: linear-gradient(to right, rgb(120, 140, 170), rgb(150, 170, 200), rgb(176, 196, 222), rgb(200, 210, 230), rgb(220, 230, 240), rgb(230, 235, 242), rgb(235, 238, 244));
-    
-
+.slide-one h2{
+    margin-top: -15px;
+    margin-left: 150px;
+    font-size: 100px;
+    color:white ;
+    font-family: "Questrial", sans-serif;
 }
 
-.slide-two h1{
-    font-size: 200px;
-    text-align: center;
-    color: rgb(120, 140, 170);
+.slide-one h3{
+    margin-top: 20px;
+    margin-left: 230px;
+    font-size: 60px;
+    font-family: "Lobster", sans-serif;
+    color:rgb(120, 140, 170);
 }
 
-/* Slide 3*/
-
-.slide-three {
-    width: 1500px;
-    height: 500px;
-    background: linear-gradient(to right, rgb(120, 140, 170), rgb(150, 170, 200), rgb(176, 196, 222), rgb(200, 210, 230), rgb(220, 230, 240), rgb(230, 235, 242), rgb(235, 238, 244));
-  
+.slide-one img{
+   margin-left: 200px;
+   pointer-events: none
 }
 
-.slide-three h1{
-    font-size: 200px;
-    text-align: center;
-    color: rgb(120, 140, 170);
-}
-
-.manual-navigation {
-    position: relative;
-    width: 1500px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-navigation input:not(:last-child) {
-    margin-right: 20px;
+.lastslide{
+    position: absolute;
+    top:-40px ;
+    left: 650px;
+    width: 500px;
+    pointer-events: none
 }
 
 

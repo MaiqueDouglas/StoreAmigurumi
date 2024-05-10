@@ -1,38 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './BannerSlider.css';
+import slide1 from "../../assets/images/slider1.png";
+import slide2 from "../../assets/images/slide1.2.png";
 
 function BannerSlider() {
-    const [currentSlide, setCurrentSlide] = useState(1);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentSlide((currentSlide % 3) + 1);
-        }, 3000);
-
-        return () => clearInterval(interval);
-    }, [currentSlide]);
-
-    const handleRadioClick = (index) => {
-        setCurrentSlide(index);
-    };
-
     return (
         <div className='slider'>
-            <div className='slides' style={{ transform: `translateX(-${(currentSlide - 1) * 1500}px)` }}>
+            <div className='slides'>
                 <div className='slide-one'>
-                    <h1>Slide um</h1>
+                    <img src={slide1} alt='slide1' />
+                    <h1>FRETE</h1>
+                    <h2>GRÁTIS</h2>
+                    <h3>Para todo o Brasil</h3>
                 </div>
-                <div className='slide-two'>
-                    <h1>Slide dois</h1>
+                <div className='lastslide'>
+                    <img src={slide2} alt='slide2' />
                 </div>
-                <div className='slide-three'>
-                    <h1>Slide três</h1>
-                </div>
-            </div>
-            <div className='manual-navigation'>
-                <input type='radio' id='radio1' name='radio-btn' checked={currentSlide === 1} onChange={() => handleRadioClick(1)} />
-                <input type='radio' id='radio2' name='radio-btn' checked={currentSlide === 2} onChange={() => handleRadioClick(2)} />
-                <input type='radio' id='radio3' name='radio-btn' checked={currentSlide === 3} onChange={() => handleRadioClick(3)} />
             </div>
         </div>
     );
