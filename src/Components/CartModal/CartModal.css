@@ -1,0 +1,51 @@
+
+.modal-content {
+    position: fixed;
+    display: grid;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 100%; 
+    padding: 10px;
+    border-radius: 5px;
+    inset: 0 0 0 auto;
+    grid-template-rows: 70px 1fr 70px;
+    background-color: rgb(163, 183, 217);
+    border: 2px solid rgb(96, 115, 147); 
+    z-index: 2000;
+}
+
+.modal-content h1{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.btn-cart {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-cart button {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(90, 140, 227);
+    border: 1px solid white; /* Adicionando a borda aqui */
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: white;
+}
+
+.btn-cart .close{
+    background-color: rgb(150, 182, 238);
+    color: white;
+}
+
+
+
+
+
+
