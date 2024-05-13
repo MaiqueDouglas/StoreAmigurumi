@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Collection2.css';
 import produto from "../../assets/images/produto.png";
-import CartModal from "../../Components/CartModal/CartModal"; // Importe o seu componente CartModal
+import CartModal from "../../Components/CartModal/CartModal";
 
 function Collection2() {
     const [isModalOpen, setIsModalOpen] = useState(false);

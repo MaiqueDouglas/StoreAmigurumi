@@ -16,10 +16,11 @@
 }
 
 .modal-content h1{
-    margin-top: 20px;
-    color: white;
+    margin-top: 1px;
+    color: black;
     text-align: center;
     font-size: 50px;
+    
 }
 
 .btn-cart {
@@ -45,6 +46,37 @@
 }
 
 
+
+
+.modal-content .listCart .item img{
+  width: 100%;
+  
+
+}
+
+.modal .listCart{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    margin-top: -650px;
+}
+
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: black;
+}
 
 
 
