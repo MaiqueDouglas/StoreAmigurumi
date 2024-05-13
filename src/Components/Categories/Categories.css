@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 .categories-container {
     position: relative;
@@ -11,7 +11,7 @@
 
 .categories-container h1 {
     font-size: 40px;
-    font-family: "Inter", sans-serif;
+    font-family: "Questrial", sans-serif;
 }
 
 .categories img {
@@ -44,5 +44,5 @@ li {
     display: inline-block;
     text-align: center; 
     font-size: 30px;
-    font-family: "Inter", sans-serif;
+    font-family: "Questrial", sans-serif;
 }

@@ -9,7 +9,6 @@
     padding: 10px;
     border-radius: 5px;
     inset: 0 0 0 auto;
-    grid-template-rows: 70px 1fr 70px;
     background-color: rgb(163, 183, 217);
     border: 2px solid rgb(96, 115, 147); 
     z-index: 2000;
@@ -19,7 +18,7 @@
     margin-top: 1px;
     color: black;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     
 }
 
@@ -29,10 +28,12 @@
 }
 
 .btn-cart button {
+    position: relative;
     width: 100%;
     height: 50px;
+    margin-top: 300px;
     background-color: rgb(90, 140, 227);
-    border: 1px solid white; /* Adicionando a borda aqui */
+    border: 1px solid white; 
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
@@ -50,17 +51,18 @@
 
 .modal-content .listCart .item img{
   width: 100%;
-  
 
+  
 }
 
 .modal .listCart{
     display: grid;
-    grid-template-columns: 70px 150px 50px 1fr;
+    grid-template-columns: 50px 120px 50px 1fr;
+    grid-auto-rows: min-content;
     gap: 10px;
     text-align: center;
     align-items: center;
-    margin-top: -650px;
+    margin-top: 10px;
 }
 
 .listCart .quantity span{
@@ -76,6 +78,13 @@
 .listCart .quantity span:nth-child(2){
     background-color: transparent;
     color: black;
+}
+
+.totalPrice{
+    font-size: 20px;
+    
+    
+    
 }
 
 

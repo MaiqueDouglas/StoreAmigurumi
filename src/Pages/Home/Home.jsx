@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../Components/Header/Header";
 import Banner from "../../Components/Banner/Banner";
 import Categories from "../../Components/Categories/Categories";
@@ -12,26 +12,29 @@ import About from "../About/About";
 import Footer from "../../Components/Footer/Footer";
 import Whatsapp from "../../Components/Whatsapp/Whatsapp";
 
-
-
 function Home(){
+    const [cartItems, setCartItems] = useState([]);
+
+    const handleAddToCart = (item) => {
+        setCartItems([...cartItems, item]);
+    };
+    
+
     return(
         <div>
-        <Header/>
-        <Banner/>
-        <Categories/>
-        <Collection/>
-        <Collection2/>
-        <BannerSlider/>
-        <Collection3/>
-        <Collection4/>
-        <About/>
-        <Footer/>
-        <Whatsapp/>
-       </div>
-
+            <Header/>
+            <Banner/>
+            <Categories/>
+            <Collection onAddToCart={handleAddToCart} />
+            <Collection2 onAddToCart={handleAddToCart} />
+            <BannerSlider/>
+            <Collection3/>
+            <Collection4/>
+            <About/>
+            <Footer/>
+            <Whatsapp/>
+        </div>
     );
-
 }
 
 export default Home;
