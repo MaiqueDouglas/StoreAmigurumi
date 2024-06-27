@@ -38,13 +38,9 @@
 
 
 .item img {
-    width: 90%;
-    filter: drop-shadow(0 50px 20px #0009);
-    transition: transform 0.3s; 
-}
-
-.item img:hover {
-    transform: scale(1); 
+    width: 100%;
+    
+     
 }
 
 
@@ -65,8 +61,8 @@
 }
 
 .container-product .item{
-    background-color: rgb(176, 196, 222);
-    border: 2px solid white;
+    
+    border: 2px solid rgb(176, 196, 222);
     padding: 20px;
     height: 450px;
     border-radius: 20px;
@@ -84,7 +80,7 @@
 .collection-button  {
     background-color: rgb(65, 93, 140);
     color: white;
-    border: 1px solid white;
+    border: none;
     font-size: 17px;
     border-radius: 20px;
     height: 40px;

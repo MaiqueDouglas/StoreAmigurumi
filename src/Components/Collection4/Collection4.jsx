@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Collection4.css';
-import produto1 from "../../assets/images/produto1.png";
+import produto1 from "../../assets/images/ursinho4.jpg";
 import CartModal from "../../Components/CartModal/CartModal";
 
 function Collection4({ onAddToCart }) {
@@ -32,7 +32,7 @@ function Collection4({ onAddToCart }) {
     return (
         <>
             <div className='h4'>
-                <h1>Segundo Titulo</h1>
+                <h1>Quarto Titulo</h1>
                 <div className='container-product4'>
                     {items.map(item => (
                         <div key={item.id} className='item4'>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Collection2.css';
-import produto from "../../assets/images/produto.png";
+import produto from "../../assets/images/ursinho2.jpeg";
 import CartModal from "../../Components/CartModal/CartModal";
 
 function Collection2({ onAddToCart }) {
@@ -33,13 +33,13 @@ function Collection2({ onAddToCart }) {
         <>
             <div className='h1'>
                 <h1>Segundo Titulo</h1>
-                <div className='container-product'>
+                <div className='container-product2'>
                     {items.map(item => (
-                        <div key={item.id} className='item'>
+                        <div key={item.id} className='item2'>
                             <img src={item.imagem} alt='Produto' />
                             <h2>{item.nome}</h2>
-                            <div className='price'>{item.preco}</div>
-                            <button className='collection-button' onClick={() => handleClick(item)}>Adicionar ao carrinho</button>
+                            <div className='price2'>{item.preco}</div>
+                            <button className='collection-button2' onClick={() => handleClick(item)}>Adicionar ao carrinho</button>
                         </div>
                     ))}
                 </div>
