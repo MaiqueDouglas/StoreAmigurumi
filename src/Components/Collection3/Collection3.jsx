@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Collection3.css';
 import produto1 from "../../assets/images/ursinho3.jpeg";
-import CartModal from "../../Components/CartModal/CartModal";
 
 function Collection3({ onAddToCart }) {
-    const [selectedItems, setSelectedItems] = useState([]);
-    const [isCartModalOpen, setIsCartModalOpen] = useState(false);
-
     const items = [
         { id: 1, nome: 'NOME DO PRODUTO 1', preco: '$100.00', imagem: produto1 },
         { id: 2, nome: 'NOME DO PRODUTO 2', preco: '$200.00', imagem: produto1 },
@@ -17,35 +13,23 @@ function Collection3({ onAddToCart }) {
     ];
 
     const handleClick = (item) => {
-        const alreadySelected = selectedItems.some(selected => selected.id === item.id);
-        if (!alreadySelected) {
-            setSelectedItems([...selectedItems, item]);
-        }
-        setIsCartModalOpen(true);
         onAddToCart(item);
     };
 
-    const handleCloseModal = () => {
-        setIsCartModalOpen(false);
-    };
-
     return (
-        <>
-            <div className='h3'>
-                <h1>Terceiro Titulo</h1>
-                <div className='container-product3'>
-                    {items.map(item => (
-                        <div key={item.id} className='item3'>
-                            <img src={item.imagem} alt='Produto' />
-                            <h2>{item.nome}</h2>
-                            <div className='price'>{item.preco}</div>
-                            <button className='collection-button3' onClick={() => handleClick(item)}>Adicionar ao carrinho</button>
-                        </div>
-                    ))}
-                </div>
+        <div className='h3'>
+            <h1>Terceiro Título</h1>
+            <div className='container-product3'>
+                {items.map(item => (
+                    <div key={item.id} className='item3'>
+                        <img src={item.imagem} alt='Produto' />
+                        <h2>{item.nome}</h2>
+                        <div className='price3'>{item.preco}</div>
+                        <button className='collection-button3' onClick={() => handleClick(item)}>Adicionar ao carrinho</button>
+                    </div>
+                ))}
             </div>
-            <CartModal isOpen={isCartModalOpen} onClose={handleCloseModal} selectedItems={selectedItems} />
-        </>
+        </div>
     );
 }
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import './Collection2.css';
-import produto from "../../assets/images/ursinho2.jpeg";
+import './Collection1.css';
+import produto from "../../assets/images/ursinho.jpeg";
 
-function Collection2({ onAddToCart }) {
+function Collection1({ onAddToCart }) {
     const items = [
         { id: 1, nome: 'NOME DO PRODUTO 1', preco: '$100.00', imagem: produto },
         { id: 2, nome: 'NOME DO PRODUTO 2', preco: '$200.00', imagem: produto },
@@ -18,7 +18,7 @@ function Collection2({ onAddToCart }) {
 
     return (
         <div className='h1'>
-            <h1>Segundo Título</h1>
+            <h1>Primeiro Título</h1>
             <div className='container-product'>
                 {items.map(item => (
                     <div key={item.id} className='item'>
@@ -33,4 +33,4 @@ function Collection2({ onAddToCart }) {
     );
 }
 
-export default Collection2;
+export default Collection1;

@@ -1,19 +1,11 @@
-import React, { useState } from "react";
-import Header from "../../Components/Header/Header";
-import Banner from "../../Components/Banner/Banner";
-import Categories from "../../Components/Categories/Categories";
-import './Home.css';
-import Collection1 from "../../Components/Collection1/Collection1";
-import BannerSlider from "../../Components/BannerSlider/BannerSlider";
-import Collection2 from "../../Components/Collection2/Collection2";
-import Collection3 from "../../Components/Collection3/Collection3";
-import Collection4 from "../../Components/Collection4/Collection4";
-import About from "../About/About";
-import Footer from "../../Components/Footer/Footer";
-import Whatsapp from "../../Components/Whatsapp/Whatsapp";
-import CartModal from "../../Components/CartModal/CartModal";
+import React, { useState } from 'react';
+import Collection1 from '../Collection1/Collection1';
+import Collection2 from '../Collection2/Collection2';
+import Collection3 from '../Collection3/Collection3';
+import Collection4 from '../Collection4/Collection4';
+import CartModal from '../CartModal/CartModal';
 
-function Home() {
+const Shop = () => {
   const [selectedItems, setSelectedItems] = useState([]);
   const [isCartModalOpen, setIsCartModalOpen] = useState(false);
 
@@ -39,20 +31,13 @@ function Home() {
 
   return (
     <div>
-      <Header />
-      <Banner />
-      <Categories />
       <Collection1 onAddToCart={handleAddToCart} />
       <Collection2 onAddToCart={handleAddToCart} />
-      <BannerSlider />
       <Collection3 onAddToCart={handleAddToCart} />
       <Collection4 onAddToCart={handleAddToCart} />
-      <About />
-      <Footer />
-      <Whatsapp />
       <CartModal isOpen={isCartModalOpen} onClose={handleCloseModal} selectedItems={selectedItems} />
     </div>
   );
-}
+};
 
-export default Home;
+export default Shop;

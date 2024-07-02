@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Login.css'; // Adicione estilos personalizados aqui
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -19,39 +20,39 @@ const Login = () => {
 
   return (
     <div>
-      <Header/>
-    <div className="container">
-      <div className="login">
-        <h1>Login</h1>
-        <form onSubmit={handleLoginSubmit}>
-          <div className="form-group">
-            <label>Email</label>
-            <input
-              type="email"
-              name="email"
-              value={loginData.email}
-              onChange={handleLoginChange}
-              required
-            />
+      <Header />
+      <div className="container">
+        <div className="login">
+          <h1>Login</h1>
+          <form onSubmit={handleLoginSubmit}>
+            <div className="form-group">
+              <label>Email</label>
+              <input
+                type="email"
+                name="email"
+                value={loginData.email}
+                onChange={handleLoginChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label>Senha</label>
+              <input
+                type="password"
+                name="password"
+                value={loginData.password}
+                onChange={handleLoginChange}
+                required
+              />
+            </div>
+            <button className='button-login' type="submit">Entrar</button>
+          </form>
+          <div className="register-link">
+            <p>Não tem uma conta? <Link to="/register">Cadastre-se</Link></p>
           </div>
-          <div className="form-group">
-            <label>Senha</label>
-            <input
-              type="password"
-              name="password"
-              value={loginData.password}
-              onChange={handleLoginChange}
-              required
-            />
-          </div>
-          <button className='button-login' type="submit">Entrar</button>
-        </form>
-        <div className="register-link">
-          <p>Não tem uma conta? <a href="#register">Cadastre-se</a></p>
         </div>
       </div>
-    </div>
-    <Footer/>
+      <Footer />
     </div>
   );
 };

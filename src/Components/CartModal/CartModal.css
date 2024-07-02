@@ -1,36 +1,37 @@
-
 .modal-content {
     position: fixed;
     right: 0;
-   
     width: 400px;
     height: 100%; 
     padding: 10px;
+    padding-bottom: 70px; /* Adiciona espaço para os botões */
     border-radius: 5px;
     inset: 0 0 0 auto;
     background-color: rgb(163, 183, 217);
     border: 2px solid rgb(96, 115, 147); 
     z-index: 2000;
+    overflow-y: auto; /* Permite rolagem do conteúdo */
 }
 
-.modal-content h1{
+.modal-content h1 {
     margin-top: 1px;
     color: black;
     text-align: center;
     font-size: 40px;
-    
 }
 
 .btn-cart {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px; 
+    right: 10px; 
     display: flex;
     gap: 10px;
 }
 
 .btn-cart button {
-    position: relative;
     width: 100%;
     height: 50px;
-    margin-top: 300px;
     background-color: rgb(90, 140, 227);
     border: 1px solid white; 
     font-size: 16px;
@@ -40,21 +41,16 @@
     color: white;
 }
 
-.btn-cart .close{
+.btn-cart .close {
     background-color: rgb(150, 182, 238);
     color: white;
 }
 
-
-
-
-.modal-content .listCart .item img{
-  width: 100%;
-
-  
+.modal-content .listCart .item img {
+    width: 100%;
 }
 
-.modal .listCart{
+.modal .listCart {
     display: grid;
     grid-template-columns: 50px 120px 50px 1fr;
     grid-auto-rows: min-content;
@@ -64,7 +60,7 @@
     margin-top: 40px;
 }
 
-.listCart .quantity span{
+.listCart .quantity span {
     display: inline-block;
     width: 25px;
     height: 25px;
@@ -74,18 +70,20 @@
     cursor: pointer;
 }
 
-.listCart .quantity span:nth-child(2){
+.listCart .quantity span:nth-child(2) {
     background-color: transparent;
     color: black;
 }
 
-.totalPrice{
+.totalPrice {
     font-size: 20px;
-    
-    
-    
 }
 
-
-
-
+.delete{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-left: 350px;
+    margin-top: -70px;
+    cursor: pointer;
+}
