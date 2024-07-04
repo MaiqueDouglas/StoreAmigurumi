@@ -18,7 +18,7 @@ function Header() {
                 <img src= {logo} alt="Logo do site" className="logo-img" />
                 <form onSubmit={handleSearch}>
                     <input type="text" name="search" placeholder="Pesquisar..." />
-                    <button type="submit">Buscar</button>
+                   
                 </form>
                 <div className="router-links">
                     <a onClick={() => navigate("/")} href="#">Home</a>

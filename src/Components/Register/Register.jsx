@@ -45,7 +45,7 @@ const Register = () => {
             />
           </div>
           <div className="form-group">
-            <label>Confirme a Senha</label>
+            <p className='confirma-senha'>Confirme a Senha</p>
             <input
               type="password"
               name="confirmPassword"

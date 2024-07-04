@@ -17,7 +17,7 @@
   
   .register h1 {
     font-size: 50px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
   
@@ -32,8 +32,13 @@
     font-size: 30px;
     margin-bottom: 10px; 
     
-    
-    
+  }
+
+  .confirma-senha{
+    text-align: left;
+    margin-left: -510px;
+    font-size: 30px;
+    margin-bottom: 10px;
   }
   
   .form-group input {

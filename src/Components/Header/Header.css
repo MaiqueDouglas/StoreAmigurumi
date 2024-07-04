@@ -82,16 +82,16 @@
 
 .header-container form{
     position: absolute;
-    margin-left: 1080px;
-    margin-top: 27px;
+    margin-left: 1070px;
+    margin-top: 25px;
     
 }
 
 .header-container input {
-    height: 40px;
-    width: 270px;
+    height: 50px;
+    width: 330px;
     border: 2px solid rgb(158, 184, 220);
-    border-radius: 10px 0 0 10px; 
+    border-radius: 40px; 
     margin-right: -1px; 
     padding-left: 10px;
     font-family: 'Acme', sans-serif; 
