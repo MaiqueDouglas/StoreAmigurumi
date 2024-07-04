@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Login.css'; // Adicione estilos personalizados aqui
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
 const Login = () => {
   const [loginData, setLoginData] = useState({ email: '', password: '' });
+  const navigate = useNavigate();
 
   const handleLoginChange = (e) => {
     const { name, value } = e.target;
@@ -16,6 +17,7 @@ const Login = () => {
     e.preventDefault();
     // Adicione aqui a lógica de login
     console.log('Login Data:', loginData);
+    navigate('/checkout'); // Redireciona para a página de checkout após o login
   };
 
   return (

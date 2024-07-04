@@ -1,0 +1,58 @@
+/* Estilos gerais */
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2, h3, h4 {
+    margin-bottom: 10px;
+  }
+  
+  input, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Estilos específicos */
+  .carrinho ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pagamento {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .pagamento > div {
+    flex: 1;
+  }
+  
+  .finalizar-compra {
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer; 
+  }
+  

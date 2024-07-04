@@ -5,6 +5,7 @@ import Contact from "../Pages/Contact/Contact";
 import Collection from "../Pages/Collection/Collection";
 import Login from "../Components/Login/Login";
 import Register from "../Components/Register/Register";
+import Checkout from "../Components/Checkout/Checkout";
 
 
 
@@ -18,6 +19,7 @@ function AppRoutes() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Register" element={<Register/>} />
+        <Route path="/checkout" element={<Checkout/>} />
       </Routes>
     
   );
