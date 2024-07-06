@@ -6,6 +6,7 @@ import Collection from "../Pages/Collection/Collection";
 import Login from "../Components/Login/Login";
 import Register from "../Components/Register/Register";
 import Checkout from "../Components/Checkout/Checkout";
+import CartModal from "../Components/CartModal/CartModal";
 
 
 
@@ -20,6 +21,7 @@ function AppRoutes() {
         <Route path="/Login" element={<Login />} />
         <Route path="/Register" element={<Register/>} />
         <Route path="/checkout" element={<Checkout/>} />
+        <Route path="/cartModal" element={<CartModal/>} />
       </Routes>
     
   );

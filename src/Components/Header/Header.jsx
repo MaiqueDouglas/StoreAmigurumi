@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Header.css';
-import logo from "../../assets/images/logo.png"
+import logo from "../../assets/images/logo.png";
 
-function Header() {
+function Header({ cartItemCount, onCartClick }) {
     const navigate = useNavigate();
 
     const handleSearch = (event) => {
@@ -15,10 +15,9 @@ function Header() {
     return (
         <div className='header'>
             <div className='header-container'>
-                <img src= {logo} alt="Logo do site" className="logo-img" />
+                <img src={logo} alt="Logo do site" className="logo-img" />
                 <form onSubmit={handleSearch}>
                     <input type="text" name="search" placeholder="Pesquisar..." />
-                   
                 </form>
                 <div className="router-links">
                     <a onClick={() => navigate("/")} href="#">Home</a>
@@ -27,10 +26,11 @@ function Header() {
                     <a onClick={() => navigate("/Contact")} href="#">Contato</a>
                 </div>
                 <div className='img-user'>
-                    <img width="40" height="40" src="https://img.icons8.com/ios/50/000000/user--v1.png" alt="user--v1"/>
+                    <img width="40" height="40" src="https://img.icons8.com/ios/50/000000/user--v1.png" alt="user--v1" />
                 </div>
-                <div className='img-cart'>
-                    <img width="40" height="40" src="https://img.icons8.com/parakeet-line/48/000000/shopping-cart-loaded.png" alt="shopping-cart-loaded"/>
+                <div className='img-cart' onClick={onCartClick}>
+                    <img width="40" height="40" src="https://img.icons8.com/parakeet-line/48/000000/shopping-cart-loaded.png" alt="shopping-cart-loaded" />
+                    {cartItemCount > 0 && <span className='cart-count'>{cartItemCount}</span>}
                 </div>
             </div>
         </div>

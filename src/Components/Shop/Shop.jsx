@@ -4,6 +4,7 @@ import Collection2 from '../Collection2/Collection2';
 import Collection3 from '../Collection3/Collection3';
 import Collection4 from '../Collection4/Collection4';
 import CartModal from '../CartModal/CartModal';
+import Header from '../Header/Header';
 
 const Shop = () => {
   const [selectedItems, setSelectedItems] = useState([]);
@@ -31,6 +32,7 @@ const Shop = () => {
 
   return (
     <div>
+      <Header cartItemCount={selectedItems.length} onCartClick={() => setIsCartModalOpen(true)} />
       <Collection1 onAddToCart={handleAddToCart} />
       <Collection2 onAddToCart={handleAddToCart} />
       <Collection3 onAddToCart={handleAddToCart} />

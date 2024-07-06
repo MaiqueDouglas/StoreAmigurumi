@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './Login.css'; // Adicione estilos personalizados aqui
+import './Login.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
@@ -22,7 +22,7 @@ const Login = () => {
 
   return (
     <div>
-      <Header />
+      <Header cartItemCount={0} /> {/* Passe cartItemCount como 0 */}
       <div className="container">
         <div className="login">
           <h1>Login</h1>

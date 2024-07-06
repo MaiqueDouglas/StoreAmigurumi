@@ -24,7 +24,7 @@ function CartModal({ isOpen, onClose, selectedItems }) {
   };
 
   const handleCheckout = () => {
-    navigate('/login'); // Redireciona para a página de login
+    navigate('/login'); 
   };
 
   return (
