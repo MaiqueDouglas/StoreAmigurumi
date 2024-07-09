@@ -23,16 +23,21 @@ const Shop = () => {
         )
       );
     }
-    setIsCartModalOpen(true);
   };
 
   const handleCloseModal = () => {
     setIsCartModalOpen(false);
   };
 
+  const handleCartClick = () => {
+    setIsCartModalOpen(true);
+  };
+
+  const totalItemsInCart = selectedItems.reduce((total, item) => total + item.quantity, 0);
+
   return (
     <div>
-      <Header cartItemCount={selectedItems.length} onCartClick={() => setIsCartModalOpen(true)} />
+      <Header cartItemCount={totalItemsInCart} onCartClick={handleCartClick} />
       <Collection1 onAddToCart={handleAddToCart} />
       <Collection2 onAddToCart={handleAddToCart} />
       <Collection3 onAddToCart={handleAddToCart} />
