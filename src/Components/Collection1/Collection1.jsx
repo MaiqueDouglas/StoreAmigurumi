@@ -1,8 +1,12 @@
+// Collection1.js
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Collection1.css';
 import produto from "../../assets/images/ursinho.jpeg";
 
 function Collection1({ onAddToCart }) {
+    const navigate = useNavigate();
+
     const items = [
         { id: 1, nome: 'NOME DO PRODUTO 1', preco: '$100.00', imagem: produto },
         { id: 2, nome: 'NOME DO PRODUTO 2', preco: '$200.00', imagem: produto },
@@ -16,13 +20,21 @@ function Collection1({ onAddToCart }) {
         onAddToCart(item);
     };
 
+    const handleImageClick = (id) => {
+        navigate(`/product/${id}`);
+    };
+
     return (
         <div className='h1'>
             <h1>Primeiro Título</h1>
             <div className='container-product'>
                 {items.map(item => (
                     <div key={item.id} className='item'>
-                        <img src={item.imagem} alt='Produto' />
+                        <img 
+                            src={item.imagem} 
+                            alt='Produto' 
+                            onClick={() => handleImageClick(item.id)}
+                        />
                         <h2>{item.nome}</h2>
                         <div className='price'>{item.preco}</div>
                         <button className='collection-button' onClick={() => handleClick(item)}>Adicionar ao carrinho</button>
