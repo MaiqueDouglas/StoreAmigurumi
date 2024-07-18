@@ -7,7 +7,7 @@ import Login from "../Components/Login/Login";
 import Register from "../Components/Register/Register";
 import Checkout from "../Components/Checkout/Checkout";
 import CartModal from "../Components/CartModal/CartModal";
-import ProductInformation from "../Components/ProductInformation/ProductInformation";
+
 
 
 
@@ -23,7 +23,7 @@ function AppRoutes() {
         <Route path="/Register" element={<Register/>} />
         <Route path="/checkout" element={<Checkout/>} />
         <Route path="/cartModal" element={<CartModal/>} />
-        <Route path="/product/:id" element={<ProductInformation />} />
+        
       </Routes>
     
   );
